@@ -1,12 +1,6 @@
 #ifndef MAIN
 #define MAIN
 typedef struct bit bit_s;
-typedef struct bit_ptr bit_p;
-
-struct bit_ptr {
-	int *b;
-	struct bit_ptr next;
-};
 
 struct bit {
 	int b;
