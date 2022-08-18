@@ -53,6 +53,9 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned int idx;
 	int res;
 
+	if (n == 1 || n == 0)
+		return (n);
+
 	head = NULL;
 	res = binary_list(n, &head);
 
